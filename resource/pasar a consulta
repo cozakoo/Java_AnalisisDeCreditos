@@ -1,0 +1,24 @@
+pasar a consulta
+select j.saf, j.fuente, left(j.programa, 2 ) , j.finfun, sum(disponible) disponible, sum(liresto) liresto  ,  sum(disponible) - sum(liresto)  SALDO
+
+FROM
+
+(select distinct                                                
+
+c.SAF,c.FUENTE,c.PROGRAMA, c.finfun,  c.inciso, c.principal, c.parcial, c.subparcial , disponible , coalesce(monto, 0 )  liresto        
+
+from piocca.creditos c                                          
+
+left join piocca.liresto l
+
+on l.saf=c.saf and l.fuente=c.fuente and l.programa=c.programa and
+
+c.inciso=l.inciso and c.principal=l.principal and  c.parcial=l.parcial  and  c.subparcial=l.subparcial
+
+ where c.saf >0 ) j
+
+group by j.saf, j.fuente, left(j.programa, 2 ) , j.finfun
+
+HAVING sum(disponible) - sum(liresto) < 0
+
+order by j.saf, j.fuente, left(j.programa, 2 ) , j.finfun

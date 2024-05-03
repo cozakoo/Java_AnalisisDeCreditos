@@ -1,0 +1,5 @@
+UPDATE liresto SET clave_saf='COT' WHERE clave_saf IN ('C35');
+UPDATE liresto SET clave_saf='JST' WHERE clave_saf IN ('JS2');
+UPDATE liresto SET clave_saf='MAC' WHERE clave_saf IN ('MA2');
+UPDATE liresto SET clave_saf='JMG' WHERE clave_saf IN ('JM2', 'JM3');
+UPDATE liresto SET clave_saf='P61' WHERE clave_saf IN ('P63');

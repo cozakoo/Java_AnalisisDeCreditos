@@ -1,0 +1,40 @@
+CASO 1 
+--------------------------
+VALOR INICIAL
+"142,56   "
+
+SE LIMPIA ESPACIOS EN BLANCO
+"142,56"
+
+SE LIMPIAN LAS COMAS
+"14256"
+
+SE CONVIERTEN A ENTERO
+14256
+
+¿COMO SÉ SI TIENE PRESICION O NO?
+si el valor una vez limpiado los espacios en blanco es igual al valor que cuando lo convierto a entero
+En este caso no son iguales, por lo tanto es necesario utilizar el doble presicion y lo dividimos en 100.
+14256/100 = 142.56
+
+
+
+_____________________________________
+CASO 2 
+--------------------------
+VALOR INICIAL
+"123   "
+
+SE LIMPIA ESPACIOS EN BLANCO
+"123"
+
+SE LIMPIAN LAS COMAS (NO TIENE) 
+"123"
+
+SE CONVIERTEN A ENTERO
+123
+
+¿COMO SÉ SI TIENE PRESICION O NO?
+si el valor una vez limpiado los espacios en blanco es igual al valor que cuando lo convierto a entero.
+En este caso son iguales, por lo tanto no es necesario utilizar el doble presicion
+
