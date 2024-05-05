@@ -3,17 +3,14 @@
 ## Descripción
 Este programa compara archivos generados por un programa en COBOL, uno en formato .xls y otro en formato .csv, para analizar la información relacionada con créditos.
 
-## Requisitos previos
-- [JDK](Java-installer/) instalado en el sistema.
-- Configurar las variables de entorno correctamente.
-- Instalar el tipo de letra ubicado en la carpeta [font-text](font-text/).
+https://github.com/cozakoo/AnalisisDeCreditos/assets/107519498/84d6503f-9623-4917-8178-a29c073af731
 
-## Ejecución
-1. Ejecutar [AnalisisDeCredito.exe](AnalisisDeCredito.exe).
-2. Seleccionar los archivos a cargar en formato .xls y .csv. Ejemplos se encuentran en la carpeta [pruebaTest](pruebaTest/).
+## Requisitos previos
+- JDK 8u202 instalado en el sistema.
+- Configurar las variables de entorno correctamente.
 
 ## Versión de Java
-Este programa fue desarrollado utilizando Java [versión X.X.X](https://java.com).
+Este programa fue desarrollado utilizando Java 8 .
 
 ## Entorno de Desarrollo
 Este proyecto fue desarrollado utilizando [NetBeans](https://netbeans.org).
@@ -22,16 +19,10 @@ Este proyecto fue desarrollado utilizando [NetBeans](https://netbeans.org).
 Este proyecto está bajo la Licencia [MIT](LICENSE).
 
 
+## Acciones a Realizar en Caso de Cambios en el Sistema y la Interpretación de Datos
 
-A CONTINUACION SE DEFINIRAN LAS ACCIONES A REALIZAR 
-EN CASO QUE OCURRAN CAMBIOS EN EL SISTEMA Y LA
-MANERA DE INTERPRETAR LOS DATOS.
-/............................................................................../
-EQUIVALENCIA DE CLAVES - HARCODEO DE CLAVES 
-ejemplo C35 corresponde(<->) a COT
-*Se debera modificar el archivo sql_hard.txt ubicado en la ruta
-./config/ 
+### Equivalencia de Claves - Harcodeo de Claves 
+Por ejemplo, C35 corresponde a COT.
+Se debe modificar el archivo `sql_hard.txt` ubicado en la ruta `./config/`.
 
-Advertencia: este archivo solo debera ser modificado por un
-Desarrollador/Programador, con conocimientos en sql.
-/............................................................................../
+Advertencia: este archivo solo deberá ser modificado por un Desarrollador/Programador con conocimientos en SQL.
