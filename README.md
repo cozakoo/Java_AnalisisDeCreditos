@@ -3,7 +3,7 @@
 ## Descripción
 Este programa compara archivos generados por un programa en COBOL, uno en formato .xls y otro en formato .csv, para analizar la información relacionada con créditos.
 
-https://github.com/cozakoo/AnalisisDeCreditos/assets/107519498/84d6503f-9623-4917-8178-a29c073af731
+https://github.com/cozakoo/AnalisisDeCreditos/assets/107519498/72b5c599-b333-4cc9-9595-7ff610a5fb63
 
 ## Requisitos previos
 - JDK 8u202 instalado en el sistema.
